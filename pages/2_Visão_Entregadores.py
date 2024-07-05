@@ -83,7 +83,7 @@ def clean_code(df1):
 
 
 # import dataset 
-df = pd.read_csv('C:\\Users\\t51269773852\\OneDrive - DIAGNOSTICOS DA AMERICA S.A\\Documentos\\Repos\\dataset\\archive\\train.csv')
+df = pd.read_csv('pages/dataset/train.csv')
 
 #limpando o dataset
 df1 = clean_code( df )
