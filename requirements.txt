@@ -8,3 +8,4 @@ matplotlib-inline
 haversine
 streamlit-folium
 Pillow
+plotly.express
