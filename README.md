@@ -23,7 +23,7 @@ métricas de crescimento:
 
   1. A menor e maior idade dos entregadores.
   2. A pior e a melhor condição de veículos.
-  3. A avaliação médida por entregador.
+  3. A avaliação média por entregador.
   4. A avaliação média e o desvio padrão por tipo de tráfego.
   5. A avaliação média e o desvio padrão por condições climáticas.
   6. Os 10 entregadores mais rápidos por cidade.
