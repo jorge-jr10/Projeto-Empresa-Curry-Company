@@ -171,31 +171,28 @@ with tab1:
     with st.container():
         st.title('Métricas Gerais')
 
-        col1, col2, col3, col4, col5, col6 = st.columns( 6 )
+        col1, col2, col3, col4, col5 = st.columns( 5 )
+        
         with col1:
-            delivery_unique = len(df1.loc[:, 'Delivery_person_ID'].unique())
-            col1.metric('Entregadores únicos', delivery_unique )
-
-        with col2:
             avg_distance = distance(df1)
-            col2.metric('Distância média', avg_distance)
+            col1.metric('Distância média', avg_distance)
               
          
-        with col3:
+        with col2:
             df_aux = avg_std_time_delivery( df1, 'Yes', 'avg_time')
-            col3.metric(' Tempo médio', df_aux)
+            col2.metric(' Tempo médio', df_aux)
 
-        with col4: 
+        with col3: 
             df_aux = avg_std_time_delivery( df1, 'Yes', 'std_time')
-            col4.metric(' STD Entrega', df_aux)          
+            col3.metric(' STD Entrega', df_aux)          
+
+        with col4:
+            df_aux = avg_std_time_delivery( df1, 'No', 'avg_time')
+            col4.metric(' Tempo médio', df_aux)
 
         with col5:
-            df_aux = avg_std_time_delivery( df1, 'No', 'avg_time')
-            col5.metric(' Tempo médio', df_aux)
-
-        with col6:
             df_aux = avg_std_time_delivery( df1, 'No', 'std_time')
-            col6.metric(' STD Entrega', df_aux)      
+            col5.metric(' STD Entrega', df_aux)      
 
     with st.container():
         st.markdown("---")
