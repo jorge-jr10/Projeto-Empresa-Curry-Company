@@ -44,7 +44,7 @@ def order_share_by_week(df1):
             fig = px.line(df_aux, x='week_of_year', y='order_by_deliver')
 
             # Remove os títulos dos eixos
-            fig.update_layout(xaxis_title='', yaxis_title='')
+            fig.update_layout(xaxis_title='', yaxis_title='Entregador')
             
             return fig 
 
