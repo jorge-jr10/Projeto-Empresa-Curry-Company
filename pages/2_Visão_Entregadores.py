@@ -141,7 +141,7 @@ tab1, = st.tabs(['Visão Geral'])
 with tab1: 
     with st.container():
         st.title(' Métricas gerais ' )
-        col1, col2, col3, col4, col5 = st.columns(5, gap='Large')
+        col1, col2, col3, col4, col5 = st.columns( 5 )
         with col1:
             #maior idade entre os entregadores
             maior_idade = (df1.loc[:, 'Delivery_person_Age'].max())
