@@ -10,7 +10,7 @@ from streamlit_folium import folium_static
 import pandas as pd
 
 #usando a largura total da página no streamlit
-st.set_page_config(page_title='Visão entregadores', layout='wide')
+st.set_page_config(page_title='Visão Entregadores', layout='wide')
 
 #funções
 def top_delivers(df1, top_asc):
