@@ -190,7 +190,6 @@ traffic_options = st.sidebar.multiselect(
     'Selecione as condições de trânsito',
     ['Low', 'Medium', 'High', 'Jam'],
     default=['Low', 'Medium', 'High', 'Jam']
-)
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("## Powered by Jorge Junior ")
