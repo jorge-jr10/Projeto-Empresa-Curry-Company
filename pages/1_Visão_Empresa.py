@@ -58,7 +58,7 @@ def order_by_week(df1):
             fig = px.line( df_aux, x='week_of_year', y='ID' )
 
             # Remove os títulos dos eixos
-            fig.update_layout(xaxis_title='', yaxis_title='')
+            fig.update_layout(xaxis_title='Semana do ano', yaxis_title='Quantidade de pedidos')
 
             return fig
 
@@ -237,7 +237,7 @@ with tab2:
          
     
     with st.container():
-        st.header('Pedidos semanais por entregador')
+        st.header('Pedidos por entregador (Semana)')
         fig = order_share_by_week(df1)
         st.plotly_chart( fig, use_container_width=True)
 
