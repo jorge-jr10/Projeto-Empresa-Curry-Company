@@ -122,7 +122,6 @@ df1 = clean_code(df)
 #=====================================
 st.header('Marketplace - Visão Restaurante')
 
-#image_path = 'C:\\Users\\t51269773852\\OneDrive - DIAGNOSTICOS DA AMERICA S.A\\Documentos\\Repos\\portifolio_projetos'
 image = Image.open('target.png')
 st.sidebar.image( image, width=120)
 
@@ -177,22 +176,21 @@ with tab1:
             avg_distance = distance(df1)
             col1.metric('Distância média', avg_distance)
               
-         
         with col2:
             df_aux = avg_std_time_delivery( df1, 'Yes', 'avg_time')
-            col2.metric(' Tempo médio', df_aux)
+            col2.metric('Tempo médio c/ Festival', df_aux)
 
         with col3: 
             df_aux = avg_std_time_delivery( df1, 'Yes', 'std_time')
-            col3.metric(' STD Entrega', df_aux)          
+            col3.metric(' STD Entrega c/ Festival', df_aux)          
 
         with col4:
             df_aux = avg_std_time_delivery( df1, 'No', 'avg_time')
-            col4.metric(' Tempo médio', df_aux)
+            col4.metric(' Tempo médio s/ Festival', df_aux)
 
         with col5:
             df_aux = avg_std_time_delivery( df1, 'No', 'std_time')
-            col5.metric(' STD Entrega', df_aux)      
+            col5.metric(' STD Entrega s/ Festival', df_aux)      
 
     with st.container():
         st.markdown("---")
