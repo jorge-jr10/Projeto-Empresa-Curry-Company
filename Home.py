@@ -3,7 +3,8 @@ from PIL import Image
 
 st.set_page_config(
     page_title='Home',
-    page_icon='S2'
+    page_icon='S2',
+    layout='wide'
 )
 
 image = Image.open('target.png')
