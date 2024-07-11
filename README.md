@@ -88,7 +88,7 @@ trânsito.
   3. As maiores variações no tempo de entrega, acontecem durante o clima ensolarado.
 
 # O produto final do projeto
-Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
+Painel online, hospedado em Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
 O painel pode ser acessado através desse link: https://jorge-jr-projeto-curry-company.streamlit.app/
 
 # Conclusão
