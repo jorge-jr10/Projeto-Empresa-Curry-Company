@@ -6,43 +6,13 @@ A empresa gera muitos dados sobre entregas, tipos de pedidos, condições climá
 
 A necessidade da empresa é ter os principais KPIs estratégicos organizados em uma única ferramenta, para que o CEO possa consultar e conseguir tomar decisões simples, porém importantes.
 
-A Cury Company possui um modelo de negócio Marketplace, que faz o intermédio do negócio entre três clientes principais: Restaurantes, entregadores e pessoas compradoras. Para acompanhar o crescimento desses negócios, o CEO gostaria de ver as seguintes métricas de crescimento:
-
-## Do lado da empresa:
-
-  1. Quantidade de pedidos por dia.
-  2. Quantidade de pedidos por semana.
-  3. Distribuição dos pedidos por tipo de tráfego.
-  4. Comparação do volume de pedidos por cidade e tipo de tráfego.
-  5. A quantidade de pedidos por entregador por semana.
-  6. A localização central de cada cidade por tipo de tráfego.
-
-## Do lado do entregador:
-
-  1. A menor e maior idade dos entregadores.
-  2. A pior e a melhor condição de veículos.
-  3. A avaliação média por entregador.
-  4. A avaliação média e o desvio padrão por tipo de tráfego.
-  5. A avaliação média e o desvio padrão por condições climáticas.
-  6. Os 10 entregadores mais rápidos por cidade.
-  7. Os 10 entregadores mais lentos por cidade.
-
-## Do lado do restaurante:
-
-  1. A quantidade de entregadores únicos.
-  2. A distância média dos resturantes e dos locais de entrega.
-  3. O tempo médio e o desvio padrão de entrega por cidade.
-  4. O tempo médio e o desvio padrão de entrega por cidade e tipo de pedido.
-  5. O tempo médio e o desvio padrão de entrega por cidade e tipo de tráfego.
-  6. O tempo médio de entrega durantes os Festivais.
-
-O objetivo desse projeto é criar um conjunto de gráficos e tabelas que exibam essas métricas.
+A Cury Company possui um modelo de negócio Marketplace, que faz o intermédio do negócio entre três clientes principais: Restaurantes, entregadores e pessoas compradoras. Nesse caso, o CEO gostaria de ver o crescimento e evolução da companhia. O objetivo desse projeto é criar um conjunto de gráficos e tabelas que exibam essas métricas.
 
 # Premissas assumidas para a análise
    
   1. A análise foi realizada com dados entre 11/02/2022 e 06/04/2022.
   2. Marketplace foi o modelo de negócio assumido.
-  3. Os 3 principais visões do negócio foram: Visão transação de pedidos, visão restaurante e visão entregadores.
+  3. As 3 principais visões do negócio foram: Visão transação de pedidos, visão restaurante e visão entregadores.
 
 # Estratégia da solução
    
@@ -55,29 +25,29 @@ Cada visão é representada pelo seguinte conjunto de métricas:
 
 ## Visão do crescimento da empresa
    1. Quantidade de pedidos por dia.
-   2. Porcentagem de pedidos por condições de trânsito.
-   3. Quantidade de pedidos por tipo e por cidade.
+   2. Quantidade de pedidos por condições de tráfego
+   3. Quantidade de pedidos por cidade e condições de tráfego
    4. Pedidos por semana.
-   5. Quantidade de pedidos por tipo de entrega.
-   6. Quantidade de pedidos por condições de trânsito e tipo de cidade.
+   5. Pedidos por entregador (Semana)
+   6. Demonstração geográfica das localidades de entrega
 
 ## Visão do crescimento dos restaurantes
-   1. Quantidade de pedidos únicos.
-   2. Distância média percorrida.
-   3. Tempo médio de entrega durante festival e dias normais.
-   4. Desvio padrão do tempo de entrega durante festivais e dias normais.
-   5. Tempo de entrega médio por cidade.
-   6. Distribuição do tempo médio de entrega por cidade.
-   7. Tempo médio de entrega por tipo de pedido.
+   1. Distância média percorrida
+   2. Tempo médio entrega com e sem Festival
+   3. Desvio padrão das entregas com e sem Festival
+   4. Tempo médio de entrega por cidade com variabilidade
+   5. Tempo médio de entrega e desvio padrão por cidade e tipo de pedido
+   6. Variação de distância Restaurante x Entrega entre as cidades
+   7. Média e STD do tempo de entrega por cidade e densidade de trânsito
 
 ## Visão do crescimento dos entregadores
-   1. Idade do entregador mais velho e do mais novo.
-   2. Avaliação do melhor e do pior veículo.
-   3. Avaliação média por entregador.
-   4. Avaliação média por condições de trânsito.
-   5. Avaliação média por condições climáticas.
-   6. Tempo médido do entregador mais rápido.
-   7. Tempo médio do entregador mais rápido por cidade.
+   1. Maior e menor idade dos entregadores
+   2. Melhor e pior condição do veículo
+   3. Quantidade de entregadores únicos
+   4. Média de avaliações por entregador
+   5. Avaliação média e desvio padrão por densidade de trânsito
+   6. Avaliação média e desvio padrão por clima
+   7. Entregadores mais rápidos e mais lentos por cidade
 
 # Top 3 Insights de dados
   1. A sazonalidade da quantidade de pedidos é diária. Há uma variação de aproximadamente 10% do número de pedidos em dia sequenciais.
