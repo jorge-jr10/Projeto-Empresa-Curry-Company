@@ -211,7 +211,7 @@ tab1, tab2, tab3 = st.tabs(['Visão Gerencial', 'Visão Tática', 'Visão Geogr�
 
 with tab1:
     with st.container():
-        st.header('Quantidade de pedidos por dia')
+        st.markdown('#### Quantidade de pedidos por dia')
         fig = orders_by_day(df1)
         st.plotly_chart( fig, use_container_width=True)        
 
@@ -231,13 +231,13 @@ with tab1:
 
 with tab2:
     with st.container():
-        st.header('Pedidos por semana')
+        st.markdown('#### Pedidos por semana')
         fig = order_by_week(df1)
         st.plotly_chart( fig, use_container_width=True)
          
     
     with st.container():
-        st.header('Pedidos por entregador (Semana)')
+        st.markdown('#### Pedidos por entregador (Semana)')
         fig = order_share_by_week(df1)
         st.plotly_chart( fig, use_container_width=True)
 
