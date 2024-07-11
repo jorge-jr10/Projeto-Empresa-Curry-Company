@@ -31,5 +31,5 @@ st.markdown(
         - Acompanhamento dos indicadores semanais de crescimento 
     - Visão restaurante: 
         - Indicadores semanais do crescimento dos restaurantes.
-    ###
+    """
 )
