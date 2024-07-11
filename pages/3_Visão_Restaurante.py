@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 
 #usando a largura total da página no streamlit
-st.set_page_config(page_title='Visão restaurante', layout='wide')
+st.set_page_config(page_title='Visão Restaurante', layout='wide')
 
 #funções 
 def avg_std_time_graph( df1 ):
