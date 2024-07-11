@@ -90,7 +90,7 @@ O painel pode ser acessado através desse link: https://jorge-jr-projeto-curry-c
 
 # Conclusão
 O objetivo desse projeto fora criar uma visualização clara que exiba as métricas da melhor forma possível para o CEO.
-Da visão da Empresa, podemos concluir que o número de pedidos cresceu entre a semana 06 e a semana 13 do ano de 2022.
+Da visão Empresa, podemos concluir que o número de pedidos cresceu entre a semana 06 e a semana 13 do ano de 2022.
 
 # Próximo passos
   1. Reduzir o número de métricas.
