@@ -89,6 +89,9 @@ def orders_by_day(df1):
             # gráfico de barras
             fig = px.bar(df_aux, x='Order_Date', y='ID')
 
+            # Remove os títulos dos eixos
+            fig.update_layout(xaxis_title='', yaxis_title='')
+
             return fig 
 
 def clean_code(df1):
