@@ -23,7 +23,7 @@ def country_maps(df1):
 
         for index, location_info in df_aux.iterrows():
             folium.Marker( [location_info['Delivery_location_latitude'],
-                    location_info['Delivery_location_latitude']],
+                    location_info['Delivery_location_longitude']],
                     popup=location_info[['City', 'Road_traffic_density']]).add_to( map )
 
         folium_static( map, width=820, height= 600 )
