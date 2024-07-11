@@ -6,7 +6,6 @@ st.set_page_config(
     page_icon='S2'
 )
 
-#image_path = 'C:\\Users\\t51269773852\\OneDrive - DIAGNOSTICOS DA AMERICA S.A\\Documentos\\Repos\\portifolio_projetos'
 image = Image.open('target.png')
 st.sidebar.image( image, width=120)
 
@@ -20,7 +19,7 @@ st.write('# Curry Company Growth Dashboard')
 st.markdown(
 
     """
-    Growth Dashboard foi construido para acompanhar as métricas de crescimento de entregadores e restaurantes.
+    Esses indicadores foram construídos para acompanhar as métricas de crescimento da empresa, entregadores e restaurantes.
     ### De que maneira enxergar essas informações? 
 
     - Visão empresa:
