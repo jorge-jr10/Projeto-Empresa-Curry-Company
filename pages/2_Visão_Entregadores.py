@@ -148,7 +148,7 @@ with tab1:
             #maior idade entre os entregadores
             menor_idade = (df1.loc[:, 'Delivery_person_Age'].min())
             maior_idade = (df1.loc[:, 'Delivery_person_Age'].max())
-            st.markdown("######## Maior e menor idade")
+            st.markdown("####### Maior/menor idade")
             st.write(f"{maior_idade} , {menor_idade}")
             #col1.metric('Maior idade', maior_idade)
 
