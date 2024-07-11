@@ -212,11 +212,11 @@ with tab1:
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown('##### Top entregadores mais rápidos')
+            st.markdown('##### Top entregadores mais rápidos por cidade')
             df3 = top_delivers(df1, top_asc=True)
             st.dataframe(df3)
 
         with col2:
-            st.markdown('##### Top entregadores mais lentos')
+            st.markdown('##### Top entregadores mais lentos por cidade')
             df3 = top_delivers(df1, top_asc=False)
             st.dataframe(df3)           
