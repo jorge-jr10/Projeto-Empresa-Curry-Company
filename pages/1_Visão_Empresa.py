@@ -42,6 +42,9 @@ def order_share_by_week(df1):
             df_aux['order_by_deliver'] = df_aux['ID'] / df_aux['Delivery_person_ID']
 
             fig = px.line(df_aux, x='week_of_year', y='order_by_deliver')
+
+            # Remove os títulos dos eixos
+            fig.update_layout(xaxis_title='', yaxis_title='')
             
             return fig 
 
@@ -53,6 +56,9 @@ def order_by_week(df1):
             df_aux = df1.loc[:, ['ID', 'week_of_year']].groupby( 'week_of_year' ).count().reset_index()
 
             fig = px.line( df_aux, x='week_of_year', y='ID' )
+
+            # Remove os títulos dos eixos
+            fig.update_layout(xaxis_title='', yaxis_title='')
 
             return fig
 
