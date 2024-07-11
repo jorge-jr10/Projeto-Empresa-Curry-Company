@@ -14,7 +14,7 @@ st.sidebar.markdown('## Fastest delivery in Town')
 st.sidebar.markdown("---")
 st.sidebar.markdown("## Powered by Jorge Junior ")
 
-st.write('# Dashboard de crescimento da Curry Company')
+st.write('## Dashboard de crescimento da Curry Company')
 
 st.markdown(
 
