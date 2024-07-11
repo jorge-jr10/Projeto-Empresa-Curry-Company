@@ -154,8 +154,8 @@ with tab1:
 
         with col2:
             #menor idade entre os entregadores
-            #menor_idade = (df1.loc[:, 'Delivery_person_Age'].min())
-            #col2.metric('Menor idade', menor_idade)
+            menor_idade = (df1.loc[:, 'Delivery_person_Age'].min())
+            col2.metric('Menor idade', menor_idade)
                         
         with col3:
             #menor condição de veículo
