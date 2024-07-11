@@ -142,7 +142,7 @@ with tab1:
     with st.container():
         st.title(' Métricas gerais ' )
       
-        col1, col2, col3, col4, col5, col6 = st.columns( 6 )
+        col1, col2, col3, col4, col5 = st.columns( 5 )
       
         with col1:
             #maior idade entre os entregadores
@@ -169,10 +169,6 @@ with tab1:
             delivery_unique = len(df1.loc[:, 'Delivery_person_ID'].unique())
             col5.metric('Entregadores únicos', delivery_unique )
 
-        with col6:
-            #quantidade de entregadores únicos
-            delivery_unique = len(df1.loc[:, 'Delivery_person_ID'].unique())
-            col6.metric('Entregadores únicos', delivery_unique )
           
     with st.container():
         st.markdown("---")
