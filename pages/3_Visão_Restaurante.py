@@ -204,16 +204,16 @@ with tab1:
             fig = avg_std_time_graph(df1)
             st.plotly_chart(fig)
 
-            with col2:
-                colunas = ['City', 'Time_taken(min)', 'Type_of_order']
-                df_aux = df1.loc[:, colunas].groupby( ['City', 'Type_of_order' ] ).agg( {'Time_taken(min)' : ['mean', 'std']} )
+        with col2:
+             colunas = ['City', 'Time_taken(min)', 'Type_of_order']
+             df_aux = df1.loc[:, colunas].groupby( ['City', 'Type_of_order' ] ).agg( {'Time_taken(min)' : ['mean', 'std']} )
 
-                df_aux.columns = ['avg_time', 'std_time']
+             df_aux.columns = ['avg_time', 'std_time']
 
-                df_aux = df_aux.reset_index()
+             df_aux = df_aux.reset_index()
 
-                st.dataframe(df_aux)
-                colunas = ['Restaurant_latitude', 'Restaurant_longitude', 'Delivery_location_latitude', 'Delivery_location_longitude']
+             st.dataframe(df_aux)
+             colunas = ['Restaurant_latitude', 'Restaurant_longitude', 'Delivery_location_latitude', 'Delivery_location_longitude']
 
 
     with st.container():
