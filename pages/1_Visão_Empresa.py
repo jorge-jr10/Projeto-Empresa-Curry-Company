@@ -10,7 +10,7 @@ from streamlit_folium import folium_static
 import pandas as pd
 
 #usando a largura total da página no streamlit
-st.set_page_config(page_title='Visão empresa', layout='wide')
+st.set_page_config(page_title='Visão Empresa', layout='wide')
 
 #funções
 def country_maps(df1):
