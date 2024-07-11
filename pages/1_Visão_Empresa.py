@@ -61,7 +61,8 @@ def traffic_order_city(df1):
                                                                             .count()
                                                                             .reset_index())
                 
-                fig = px.scatter( df_aux, x='City', y='Road_traffic_density', size= 'ID', color='City' )
+                fig = px.scatter( df_aux, x='City', y='Road_traffic_density', size= 'ID', color='City', labels={'City': '', 'Road_traffic_density': ''})
+  
                 return fig
 
 def traffic_order_share(df1):
