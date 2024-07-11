@@ -223,7 +223,7 @@ with tab1:
         col1, col2 = st.columns( 2 )
 
         with col1:
-            st.markdown('Média de distância entre as cidades')
+            st.markdown('Variação de distância Restaurante x Entrega entre as cidades')
             df1 ['distance'] = df1.loc[:, colunas].apply( lambda x: haversine(
                                                                  ( x['Restaurant_latitude'],  x['Restaurant_longitude']),
                                                                  ( x['Delivery_location_latitude'],  x['Delivery_location_longitude']  )), axis=1)
