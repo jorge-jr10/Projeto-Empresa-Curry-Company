@@ -221,7 +221,7 @@ with tab1:
 
         with col1:
             fig = traffic_order_share(df1)
-            st.markdown('#### Entregas por condições de trafégo')
+            st.markdown('#### Entregas por condições de tráfego')
             st.plotly_chart( fig, use_container_width=True)              
     
         with col2:
