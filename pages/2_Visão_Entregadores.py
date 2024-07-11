@@ -94,7 +94,6 @@ df1 = clean_code( df )
 #=====================================
 st.header('Marketplace - Visão Entregadores')
 
-#image_path = 'C:\\Users\\t51269773852\\OneDrive - DIAGNOSTICOS DA AMERICA S.A\\Documentos\\Repos\\portifolio_projetos'
 image = Image.open('target.png')
 st.sidebar.image( image, width=120)
 
@@ -182,7 +181,7 @@ with tab1:
             st.dataframe(avg_ratings_per_delivery)
 
         with col2:
-            st.markdown('##### Avaliação média e desvio padrão por tipo de trânsito')
+            st.markdown('##### Avaliação média e desvio padrão por densidade de trânsito')
             df_avg_std_rating_by_traffic = (df1.loc[:, ['Delivery_person_Ratings', 'Road_traffic_density']]
                                                         .groupby('Road_traffic_density')
                                                         .agg({'Delivery_person_Ratings': [ 'mean', 'std' ]})    
