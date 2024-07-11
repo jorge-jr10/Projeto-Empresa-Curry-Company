@@ -61,7 +61,10 @@ def traffic_order_city(df1):
                                                                             .count()
                                                                             .reset_index())
                 
-                fig = px.scatter( df_aux, x='City', y='Road_traffic_density', size= 'ID', color='City', labels={'City': '', 'Road_traffic_density': ''})
+                fig = px.scatter(df_aux, x='City', y='Road_traffic_density', size= 'ID', color='City')
+
+                # Remove os títulos dos eixos
+                fig.update_layout(xaxis_title='', yaxis_title='')
   
                 return fig
 
@@ -155,7 +158,6 @@ df1 = clean_code (df)
 #=====================================
 st.header('Marketplace - Visão Empresa')
 
-#image_path = 'C:\\Users\\t51269773852\\OneDrive - DIAGNOSTICOS DA AMERICA S.A\\Documentos\\Repos\\portifolio_projetos'
 image = Image.open('target.png')
 st.sidebar.image( image, width=120)
 
