@@ -242,5 +242,5 @@ with tab2:
         st.plotly_chart( fig, use_container_width=True)
 
 with tab3:
-    st.header('Mapa do país')
+    st.header('Locais de entrega')
     country_maps(df1)
