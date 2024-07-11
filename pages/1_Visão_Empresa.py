@@ -211,7 +211,7 @@ tab1, tab2, tab3 = st.tabs(['Visão Gerencial', 'Visão Tática', 'Visão Geogr�
 
 with tab1:
     with st.container():
-        st.header('Pedidos por dia')
+        st.header('Quantidade de pedidos por dia')
         fig = orders_by_day(df1)
         st.plotly_chart( fig, use_container_width=True)        
 
