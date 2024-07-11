@@ -228,7 +228,7 @@ with tab1:
                                                                  ( x['Restaurant_latitude'],  x['Restaurant_longitude']),
                                                                  ( x['Delivery_location_latitude'],  x['Delivery_location_longitude']  )), axis=1)
 
-            avg_distance = df1.loc[:, ['City', 'distance']].groupby('distance').mean().reset_index()
+            avg_distance = df1.loc[:, ['City', 'distance']].groupby('City').mean().reset_index()
 
             fig = go.Figure(data=[go.Pie( labels=avg_distance['City'], values=avg_distance['distance'], pull=[0.03 , 0.03, 0.03])])
 
