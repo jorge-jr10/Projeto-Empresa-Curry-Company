@@ -202,6 +202,7 @@ with tab1:
         col1, col2 = st.columns(2)
 
         with col1: 
+            st.markdown("Tempo médio de entrega por cidade com variabilidade")
             fig = avg_std_time_graph(df1)
             st.plotly_chart(fig)
 
