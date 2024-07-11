@@ -200,7 +200,8 @@ with tab1:
         st.markdown("---")
         col1, col2 = st.columns(2)
 
-        with col1:            
+        with col1: 
+            st.markdown('Média e STD do tempo de entrega por cidade e tipo de pedido')
             fig = avg_std_time_graph(df1)
             st.plotly_chart(fig)
 
