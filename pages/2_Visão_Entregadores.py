@@ -182,7 +182,7 @@ with tab1:
             st.dataframe(avg_ratings_per_delivery)
 
         with col2:
-            st.markdown('##### Avaliação média por trânsito')
+            st.markdown('##### Avaliação média e desvio padrão por trânsito')
             df_avg_std_rating_by_traffic = (df1.loc[:, ['Delivery_person_Ratings', 'Road_traffic_density']]
                                                         .groupby('Road_traffic_density')
                                                         .agg({'Delivery_person_Ratings': [ 'mean', 'std' ]})    
@@ -194,7 +194,7 @@ with tab1:
             st.dataframe(df_avg_std_rating_by_traffic)
 
 
-            st.markdown('##### Avaliação média por clima')
+            st.markdown('##### Avaliação média e desvio padrão por clima')
             df_avg_std_rating_by_traffic = ((df1.loc[:, ['Delivery_person_Ratings', 'Weatherconditions']]
                                                         .groupby('Weatherconditions')
                                                         .agg({'Delivery_person_Ratings': [ 'mean', 'std' ]})
