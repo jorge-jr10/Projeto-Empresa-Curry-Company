@@ -201,7 +201,6 @@ with tab1:
         col1, col2 = st.columns(2)
 
         with col1: 
-            st.markdown('Média e STD do tempo de entrega por cidade e tipo de pedido')
             fig = avg_std_time_graph(df1)
             st.plotly_chart(fig)
 
@@ -224,7 +223,7 @@ with tab1:
         col1, col2 = st.columns( 2 )
 
         with col1:
-            
+            st.markdown('Média e STD do tempo de entrega por cidade e tipo de pedido')
             df1 ['distance'] = df1.loc[:, colunas].apply( lambda x: haversine(
                                                                  ( x['Restaurant_latitude'],  x['Restaurant_longitude']),
                                                                  ( x['Delivery_location_latitude'],  x['Delivery_location_longitude']  )), axis=1)
