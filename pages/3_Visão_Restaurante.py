@@ -236,6 +236,7 @@ with tab1:
                        
 
         with col2:
+            st.markdown('Média e STD do tempo de entrega por cidade e densidade de trânsito')
             df_aux = (df1.loc[:, ['City', 'Time_taken(min)', 'Road_traffic_density']]
                                             .groupby( [ 'Road_traffic_density', 'City' ] )
                                             .agg( {'Time_taken(min)' : ['mean', 'std']} ))
