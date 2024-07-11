@@ -155,12 +155,12 @@ with tab1:
         with col3:
             #menor condição de veículo
             melhor_condicao = format(df1.loc[:, 'Vehicle_condition'].max())
-            col3.metric('Melhor condição', melhor_condicao)
+            col3.metric('Melhor condição do veículo', melhor_condicao)
 
         with col4:
             #menor condição de veículo
             pior_condicao = format(df1.loc[:, 'Vehicle_condition'].min())
-            col4.metric('Pior condição', pior_condicao)
+            col4.metric('Pior condição do veículo', pior_condicao)
 
     
     with st.container():
