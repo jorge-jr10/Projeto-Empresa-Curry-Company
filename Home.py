@@ -30,6 +30,6 @@ st.markdown(
     - Visão entregador: 
         - Acompanhamento dos indicadores semanais de crescimento 
     - Visão restaurante: 
-        - Indicadores semanais do crescimento dos restaurantes 
+        - Indicadores semanais do crescimento dos restaurantes, teste.
 """
 )
