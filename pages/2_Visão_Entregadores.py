@@ -141,7 +141,7 @@ tab1, = st.tabs(['Visão Geral'])
 with tab1: 
     with st.container():
         st.title(' Métricas gerais ' )
-        col1, col2, col3, col4 = st.columns(4, gap='Large')
+        col1, col2, col3, col4, col5 = st.columns(5, gap='Large')
         with col1:
             #maior idade entre os entregadores
             maior_idade = (df1.loc[:, 'Delivery_person_Age'].max())
@@ -162,7 +162,11 @@ with tab1:
             pior_condicao = format(df1.loc[:, 'Vehicle_condition'].min())
             col4.metric('Pior condição do veículo', pior_condicao)
 
-    
+        with col5:
+            #quantidade de entregadores únicos
+            delivery_unique = len(df1.loc[:, 'Delivery_person_ID'].unique())
+            col1.metric('Entregadores únicos', delivery_unique )
+          
     with st.container():
         st.markdown("---")
         st.title( 'Avaliações' )
