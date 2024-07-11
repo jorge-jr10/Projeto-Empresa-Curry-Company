@@ -205,6 +205,7 @@ with tab1:
             st.plotly_chart(fig)
 
         with col2:
+             st.markdown('Tempo médio de entrega e desvio padrão por cidade e tipo de pedido')
              colunas = ['City', 'Time_taken(min)', 'Type_of_order']
              df_aux = df1.loc[:, colunas].groupby( ['City', 'Type_of_order' ] ).agg( {'Time_taken(min)' : ['mean', 'std']} )
 
