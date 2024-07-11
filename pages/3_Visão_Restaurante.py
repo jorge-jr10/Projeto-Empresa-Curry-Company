@@ -28,7 +28,8 @@ def avg_std_time_graph( df1 ):
                                     x=df_aux['City'],
                                     y=df_aux['avg_time'],
                                     error_y=dict( type='data', array=df_aux['std_time'] ) ) )
-                fig.update_layout(barmode='group')
+            
+                fig.update_layout(barmode='group', xaxis_title='Tipo de cidade', yaxis_title='Tempo médio de entrega')
 
                 return fig
 
